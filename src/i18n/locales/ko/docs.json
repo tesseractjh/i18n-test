@@ -1,0 +1,5 @@
+{
+  "content": "문서 페이지입니다.",
+  "items": "{count, plural, =0 {아이템이 없습니다} one {# 개의 아이템} other {# 개의 아이템}}",
+  "variables": "{my_variable}"
+}

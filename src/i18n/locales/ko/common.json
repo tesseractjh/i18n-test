@@ -1,0 +1,14 @@
+{
+  "title": "Next.js 앱 만들기",
+  "description": "create next app으로 생성됨",
+  "home": {
+    "getStarted": "시작하려면 page.tsx 파일을 수정하세요.",
+    "lookingFor": "시작점이나 더 많은 안내가 필요하신가요?",
+    "templates": "템플릿",
+    "learning": "학습",
+    "center": "센터로 이동하세요.",
+    "documentation": "문서",
+    "deploy": "배포하기"
+  }
+}
+

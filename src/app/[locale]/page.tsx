@@ -1,8 +1,23 @@
+import { getTranslation } from "@/i18n/server";
+import { fallbackLng, languages, type Locale } from "@/i18n/settings";
 import Image from "next/image";
-import Button from "./Button";
+import Link from "next/link";
+import Button from "../_components/Button";
 import styles from "./page.module.css";
 
-export default function Home() {
+interface PageProps {
+  params: Promise<{ locale: string }>;
+}
+
+function isValidLocale(locale: string): locale is Locale {
+  return languages.includes(locale as Locale);
+}
+
+export default async function Home({ params }: PageProps) {
+  const { locale: localeParam } = await params;
+  const locale = isValidLocale(localeParam) ? localeParam : fallbackLng;
+  const { t } = await getTranslation(locale);
+
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -15,15 +30,15 @@ export default function Home() {
           priority
         />
         <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
+          <h1>{t("home.getStarted")}</h1>
           <p>
-            Looking for a starting point or more instructions? Head over to{" "}
+            {t("home.lookingFor")}{" "}
             <a
               href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Templates
+              {t("home.templates")}
             </a>{" "}
             or the{" "}
             <a
@@ -31,21 +46,20 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Learning
+              {t("home.templates")}
             </a>{" "}
-            center.
+            {t("home.center")}
           </p>
         </div>
         <div className={styles.ctas}>
           <Button />
-          <a
+          <Link
             className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
+            href={`/${locale}/docs`}
             rel="noopener noreferrer"
           >
-            Documentation
-          </a>
+            {t("home.documentation")}
+          </Link>
         </div>
       </main>
     </div>

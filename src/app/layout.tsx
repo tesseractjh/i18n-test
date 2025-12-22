@@ -22,11 +22,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
-      </body>
-    </html>
-  );
+  return children;
 }
+
+// 폰트 변수를 export하여 [locale]/layout.tsx에서 사용
+export { geistMono, geistSans };
