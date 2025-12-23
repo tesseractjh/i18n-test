@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@formatjs/intl-localematcher':
+        specifier: ^0.7.2
+        version: 0.7.2
+      negotiator:
+        specifier: ^1.0.0
+        version: 1.0.0
       next:
         specifier: 16.1.0
         version: 16.1.0(@babel/core@7.28.5)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
@@ -17,7 +23,16 @@ importers:
       react-dom:
         specifier: 19.2.3
         version: 19.2.3(react@19.2.3)
+      react-intl:
+        specifier: ^8.0.6
+        version: 8.0.6(@types/react@19.2.7)(react@19.2.3)(typescript@5.9.3)
     devDependencies:
+      '@formatjs/cli':
+        specifier: ^6.8.4
+        version: 6.8.4
+      '@types/negotiator':
+        specifier: ^0.6.4
+        version: 0.6.4
       '@types/node':
         specifier: ^20
         version: 20.19.27
@@ -152,6 +167,60 @@ packages:
   '@eslint/plugin-kit@0.4.1':
     resolution: {integrity: sha512-43/qtrDUokr7LJqoF2c3+RInu/t4zfrpYdoSDfYyhg52rwLV6TnOvdG4fXm7IkSB3wErkcmJS9iEhjVtOSEjjA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@formatjs/cli@6.8.4':
+    resolution: {integrity: sha512-4dPSFa1cyNGKIItber00qDfrRTKLD3ZOozHyZ/YucudcpP5XwZofr6tN15Czr3zs+eYdPIaRnEAvBypBrMy38A==}
+    engines: {node: '>= 16'}
+    hasBin: true
+    peerDependencies:
+      '@glimmer/env': '*'
+      '@glimmer/reference': '*'
+      '@glimmer/syntax': ^0.95.0
+      '@glimmer/validator': '*'
+      '@vue/compiler-core': ^3.5.12
+      content-tag: ^3.0.0
+      ember-template-recast: ^6.1.5
+      vue: ^3.5.12
+    peerDependenciesMeta:
+      '@glimmer/env':
+        optional: true
+      '@glimmer/reference':
+        optional: true
+      '@glimmer/syntax':
+        optional: true
+      '@glimmer/validator':
+        optional: true
+      '@vue/compiler-core':
+        optional: true
+      content-tag:
+        optional: true
+      ember-template-recast:
+        optional: true
+      vue:
+        optional: true
+
+  '@formatjs/ecma402-abstract@3.0.3':
+    resolution: {integrity: sha512-1RGcY9guvulPKz2FJ3CvtfMh41h6S1fnHCUUCZbyRINokwsM740dMTBTkETT5QaYtjAIRoOFSPgf2LypzSgJHg==}
+
+  '@formatjs/fast-memoize@3.0.1':
+    resolution: {integrity: sha512-kzk635kEmsxrrEWQXY7uKRocFCVXR4es5OQqcqCGg2NPtQztG/OBkE9THHu6UOTxpfyIkZhh6DjPBZGRp7y3og==}
+
+  '@formatjs/icu-messageformat-parser@3.0.4':
+    resolution: {integrity: sha512-24JitjUVRMGlvgSVMLZBZep6M/G8mUaGsObC6S9BYSvDlDulcQ3u/ZXhtQWuS6n/GTR39n5glnwL3aUwCaD9TQ==}
+
+  '@formatjs/icu-skeleton-parser@2.0.3':
+    resolution: {integrity: sha512-PfvEhRlRdBiEh5ivnVGrEpJRuN3JtiOD0r2vJjUwUJ7BHRs14AZl93QZ1nvNUByQ+WUYGmt5CArg3wejZV+o6Q==}
+
+  '@formatjs/intl-localematcher@0.7.2':
+    resolution: {integrity: sha512-1cpFlw1omNn2/Uz/vAdAyovlh7qS/po7MWipH3JrShT/lVUh2+lbEAWquyh9yRa84fqlLulTt7oysGtjATujZQ==}
+
+  '@formatjs/intl@4.0.4':
+    resolution: {integrity: sha512-Y6S7r+0mevIR75yf7kqNFxi0vAALAeFJCKG0kfHWTb9PB+BEQhagDPdKi+y2LGBeqviVf1+AMqdHY9zN/m4aZg==}
+    peerDependencies:
+      typescript: ^5.6.0
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -407,11 +476,19 @@ packages:
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
 
+  '@types/hoist-non-react-statics@3.3.7':
+    resolution: {integrity: sha512-PQTyIulDkIDro8P+IHbKCsw7U2xxBYflVzW/FgWdCAePD9xGSidgA76/GeJ6lBKoblyhf9pBY763gbrN+1dI8g==}
+    peerDependencies:
+      '@types/react': '*'
+
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
+
+  '@types/negotiator@0.6.4':
+    resolution: {integrity: sha512-elf6BsTq+AkyNsb2h5cGNst2Mc7dPliVoAPm1fXglC/BM3f2pFA40BaSSv3E5lyHteEawVKLP+8TwiY1DMNb3A==}
 
   '@types/node@20.19.27':
     resolution: {integrity: sha512-N2clP5pJhB2YnZJ3PIHFk5RkygRX5WO/5f0WC08tp0wd+sv0rsJk3MqWn3CbNmT2J505a5336jaQj4ph1AdMug==}
@@ -753,6 +830,9 @@ packages:
       supports-color:
         optional: true
 
+  decimal.js@10.6.0:
+    resolution: {integrity: sha512-YpgQiITW3JXGntzdUmyUR1V812Hn8T1YVXhCu+wO3OpS4eU9l4YdD3qjyiKdV6mvV29zapkMeD390UVEf2lkUg==}
+
   deep-is@0.1.4:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
 
@@ -1076,6 +1156,9 @@ packages:
   hermes-parser@0.25.1:
     resolution: {integrity: sha512-6pEjquH3rqaI6cYAXYPcz9MS4rY6R4ngRgrgfDshRptUZIc3lw0MCIJIGDj9++mfySOuPTHB4nrSW99BCvOPIA==}
 
+  hoist-non-react-statics@3.3.2:
+    resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==}
+
   ignore@5.3.2:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
     engines: {node: '>= 4'}
@@ -1095,6 +1178,9 @@ packages:
   internal-slot@1.1.0:
     resolution: {integrity: sha512-4gd7VpWNQNB4UKKCFFVcp1AVv+FMOgs9NKzjHKusc8jTMhd5eL1NqQqOpE0KzMds804/yHlglp3uxgluOqAPLw==}
     engines: {node: '>= 0.4'}
+
+  intl-messageformat@11.0.4:
+    resolution: {integrity: sha512-YQUQ1ElDaTf/+GgVrrDjtnUSA/JsOGX7dGwWEQo4h1+MqGOIVx5ZrN33JqSTO/AMz3BLETmYbQlA6MuUqwuhlg==}
 
   is-array-buffer@3.0.5:
     resolution: {integrity: sha512-DDfANUiiG2wC1qawP66qlTugJeL5HyzMpfr8lLK+jMQirGzNod0B12cFB/9q838Ru27sBwfw78/rdoU7RERz6A==}
@@ -1309,6 +1395,10 @@ packages:
   natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
 
+  negotiator@1.0.0:
+    resolution: {integrity: sha512-8Ofs/AUQh8MaEcrlq5xOX0CQ9ypTF5dl78mjlMNfOK08fzpgTHQRQPBxcPlEtIw0yRpws+Zo/3r+5WRby7u3Gg==}
+    engines: {node: '>= 0.6'}
+
   next@16.1.0:
     resolution: {integrity: sha512-Y+KbmDbefYtHDDQKLNrmzE/YYzG2msqo2VXhzh5yrJ54tx/6TmGdkR5+kP9ma7i7LwZpZMfoY3m/AoPPPKxtVw==}
     engines: {node: '>=20.9.0'}
@@ -1433,6 +1523,16 @@ packages:
     resolution: {integrity: sha512-yELu4WmLPw5Mr/lmeEpox5rw3RETacE++JgHqQzd2dg+YbJuat3jH4ingc+WPZhxaoFzdv9y33G+F7Nl5O0GBg==}
     peerDependencies:
       react: ^19.2.3
+
+  react-intl@8.0.6:
+    resolution: {integrity: sha512-KS1G2yr+yQwp0QPF0MVkHwcmkTQor0j2TXobDRZECxEGTwT20lycLv2lSK33jTOaUTtj9DWr0dac1vpmSDiJjg==}
+    peerDependencies:
+      '@types/react': '19'
+      react: 16 || 17 || 18 || 19
+      typescript: ^5.6.0
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
@@ -1875,6 +1975,44 @@ snapshots:
       '@eslint/core': 0.17.0
       levn: 0.4.1
 
+  '@formatjs/cli@6.8.4': {}
+
+  '@formatjs/ecma402-abstract@3.0.3':
+    dependencies:
+      '@formatjs/fast-memoize': 3.0.1
+      '@formatjs/intl-localematcher': 0.7.2
+      decimal.js: 10.6.0
+      tslib: 2.8.1
+
+  '@formatjs/fast-memoize@3.0.1':
+    dependencies:
+      tslib: 2.8.1
+
+  '@formatjs/icu-messageformat-parser@3.0.4':
+    dependencies:
+      '@formatjs/ecma402-abstract': 3.0.3
+      '@formatjs/icu-skeleton-parser': 2.0.3
+      tslib: 2.8.1
+
+  '@formatjs/icu-skeleton-parser@2.0.3':
+    dependencies:
+      '@formatjs/ecma402-abstract': 3.0.3
+      tslib: 2.8.1
+
+  '@formatjs/intl-localematcher@0.7.2':
+    dependencies:
+      tslib: 2.8.1
+
+  '@formatjs/intl@4.0.4(typescript@5.9.3)':
+    dependencies:
+      '@formatjs/ecma402-abstract': 3.0.3
+      '@formatjs/fast-memoize': 3.0.1
+      '@formatjs/icu-messageformat-parser': 3.0.4
+      intl-messageformat: 11.0.4
+      tslib: 2.8.1
+    optionalDependencies:
+      typescript: 5.9.3
+
   '@humanfs/core@0.19.1': {}
 
   '@humanfs/node@0.16.7':
@@ -2066,9 +2204,16 @@ snapshots:
 
   '@types/estree@1.0.8': {}
 
+  '@types/hoist-non-react-statics@3.3.7(@types/react@19.2.7)':
+    dependencies:
+      '@types/react': 19.2.7
+      hoist-non-react-statics: 3.3.2
+
   '@types/json-schema@7.0.15': {}
 
   '@types/json5@0.0.29': {}
+
+  '@types/negotiator@0.6.4': {}
 
   '@types/node@20.19.27':
     dependencies:
@@ -2431,6 +2576,8 @@ snapshots:
     dependencies:
       ms: 2.1.3
 
+  decimal.js@10.6.0: {}
+
   deep-is@0.1.4: {}
 
   define-data-property@1.1.4:
@@ -2573,7 +2720,7 @@ snapshots:
       eslint: 9.39.2
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.50.0(eslint@9.39.2)(typescript@5.9.3))(eslint@9.39.2))(eslint@9.39.2)
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.50.0(eslint@9.39.2)(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.2)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.50.0(eslint@9.39.2)(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.50.0(eslint@9.39.2)(typescript@5.9.3))(eslint@9.39.2))(eslint@9.39.2))(eslint@9.39.2)
       eslint-plugin-jsx-a11y: 6.10.2(eslint@9.39.2)
       eslint-plugin-react: 7.37.5(eslint@9.39.2)
       eslint-plugin-react-hooks: 7.0.1(eslint@9.39.2)
@@ -2606,7 +2753,7 @@ snapshots:
       tinyglobby: 0.2.15
       unrs-resolver: 1.11.1
     optionalDependencies:
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.50.0(eslint@9.39.2)(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.2)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.50.0(eslint@9.39.2)(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.50.0(eslint@9.39.2)(typescript@5.9.3))(eslint@9.39.2))(eslint@9.39.2))(eslint@9.39.2)
     transitivePeerDependencies:
       - supports-color
 
@@ -2621,7 +2768,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.50.0(eslint@9.39.2)(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.2):
+  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.50.0(eslint@9.39.2)(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.50.0(eslint@9.39.2)(typescript@5.9.3))(eslint@9.39.2))(eslint@9.39.2))(eslint@9.39.2):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.9
@@ -2906,6 +3053,10 @@ snapshots:
     dependencies:
       hermes-estree: 0.25.1
 
+  hoist-non-react-statics@3.3.2:
+    dependencies:
+      react-is: 16.13.1
+
   ignore@5.3.2: {}
 
   ignore@7.0.5: {}
@@ -2922,6 +3073,13 @@ snapshots:
       es-errors: 1.3.0
       hasown: 2.0.2
       side-channel: 1.1.0
+
+  intl-messageformat@11.0.4:
+    dependencies:
+      '@formatjs/ecma402-abstract': 3.0.3
+      '@formatjs/fast-memoize': 3.0.1
+      '@formatjs/icu-messageformat-parser': 3.0.4
+      tslib: 2.8.1
 
   is-array-buffer@3.0.5:
     dependencies:
@@ -3131,6 +3289,8 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
+  negotiator@1.0.0: {}
+
   next@16.1.0(@babel/core@7.28.5)(react-dom@19.2.3(react@19.2.3))(react@19.2.3):
     dependencies:
       '@next/env': 16.1.0
@@ -3262,6 +3422,20 @@ snapshots:
     dependencies:
       react: 19.2.3
       scheduler: 0.27.0
+
+  react-intl@8.0.6(@types/react@19.2.7)(react@19.2.3)(typescript@5.9.3):
+    dependencies:
+      '@formatjs/ecma402-abstract': 3.0.3
+      '@formatjs/icu-messageformat-parser': 3.0.4
+      '@formatjs/intl': 4.0.4(typescript@5.9.3)
+      '@types/hoist-non-react-statics': 3.3.7(@types/react@19.2.7)
+      '@types/react': 19.2.7
+      hoist-non-react-statics: 3.3.2
+      intl-messageformat: 11.0.4
+      react: 19.2.3
+      tslib: 2.8.1
+    optionalDependencies:
+      typescript: 5.9.3
 
   react-is@16.13.1: {}
 

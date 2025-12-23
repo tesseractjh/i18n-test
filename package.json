@@ -6,14 +6,21 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "extract": "formatjs extract \"src/**/*.{ts,tsx}\" --ignore \"**/*.d.ts\" --out-file lang.json",
+    "compile": "formatjs compile lang.json --out-file compiled/ko.json"
   },
   "dependencies": {
+    "@formatjs/intl-localematcher": "^0.7.2",
+    "negotiator": "^1.0.0",
     "next": "16.1.0",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "react-intl": "^8.0.6"
   },
   "devDependencies": {
+    "@formatjs/cli": "^6.8.4",
+    "@types/negotiator": "^0.6.4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

@@ -1,0 +1,12 @@
+{
+  "home.title": "To get started, edit the page.tsx file.",
+  "home.description": "Looking for a starting point or more instructions? Head over to {templatesLink} or the {learningLink} center.",
+  "home.templates": "Templates",
+  "home.learning": "Learning",
+  "home.deployNow": "Deploy Now",
+  "home.documentation": "Documentation",
+  "docs.title": "Documentation Page",
+  "docs.itemCount": "{count, plural, =0 {No items} one {# item} other {# items}}",
+  "docs.variable": "Variable: {value}"
+}
+

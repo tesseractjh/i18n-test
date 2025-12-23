@@ -1,0 +1,12 @@
+{
+  "home.title": "시작하려면 page.tsx 파일을 수정하세요.",
+  "home.description": "시작점이나 더 많은 안내가 필요하신가요? {templatesLink} 또는 {learningLink} 센터를 방문하세요.",
+  "home.templates": "템플릿",
+  "home.learning": "학습",
+  "home.deployNow": "지금 배포하기",
+  "home.documentation": "문서",
+  "docs.title": "문서 페이지입니다.",
+  "docs.itemCount": "{count, plural, =0 {아이템이 없습니다} other {#개의 아이템}}",
+  "docs.variable": "변수: {value}"
+}
+

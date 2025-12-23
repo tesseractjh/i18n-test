@@ -1,0 +1,36 @@
+{"location":"proxy.ts:39","message":"proxy function called","data":{"pathname":"/","url":"http://localhost:3000/"},"timestamp":1766464765433,"sessionId":"debug-session","hypothesisId":"C"}
+{"location":"proxy.ts:48","message":"pathnameHasLocale check","data":{"pathname":"/","pathnameHasLocale":false},"timestamp":1766464765434,"sessionId":"debug-session","hypothesisId":"D"}
+{"location":"proxy.ts:66","message":"redirecting to locale path","data":{"pathname":"/","locale":"ko","redirectUrl":"http://localhost:3000/ko/"},"timestamp":1766464765437,"sessionId":"debug-session","hypothesisId":"B"}
+{"location":"proxy.ts:39","message":"proxy function called","data":{"pathname":"/ko","url":"http://localhost:3000/ko"},"timestamp":1766464765457,"sessionId":"debug-session","hypothesisId":"C"}
+{"location":"proxy.ts:48","message":"pathnameHasLocale check","data":{"pathname":"/ko","pathnameHasLocale":true},"timestamp":1766464765457,"sessionId":"debug-session","hypothesisId":"D"}
+{"location":"proxy.ts:53","message":"returning next() - locale already present","data":{"pathname":"/ko"},"timestamp":1766464765457,"sessionId":"debug-session","hypothesisId":"D"}
+{"location":"proxy.ts:39","message":"proxy function called","data":{"pathname":"/ko","url":"http://localhost:3000/ko"},"timestamp":1766464766664,"sessionId":"debug-session","hypothesisId":"C"}
+{"location":"proxy.ts:48","message":"pathnameHasLocale check","data":{"pathname":"/ko","pathnameHasLocale":true},"timestamp":1766464766665,"sessionId":"debug-session","hypothesisId":"D"}
+{"location":"proxy.ts:53","message":"returning next() - locale already present","data":{"pathname":"/ko"},"timestamp":1766464766665,"sessionId":"debug-session","hypothesisId":"D"}
+{"location":"proxy.ts:39","message":"proxy function called","data":{"pathname":"/","url":"http://localhost:3000/"},"timestamp":1766464768929,"sessionId":"debug-session","hypothesisId":"C"}
+{"location":"proxy.ts:48","message":"pathnameHasLocale check","data":{"pathname":"/","pathnameHasLocale":false},"timestamp":1766464768929,"sessionId":"debug-session","hypothesisId":"D"}
+{"location":"proxy.ts:66","message":"redirecting to locale path","data":{"pathname":"/","locale":"ko","redirectUrl":"http://localhost:3000/ko/"},"timestamp":1766464768930,"sessionId":"debug-session","hypothesisId":"B"}
+{"location":"proxy.ts:39","message":"proxy function called","data":{"pathname":"/ko","url":"http://localhost:3000/ko"},"timestamp":1766464768938,"sessionId":"debug-session","hypothesisId":"C"}
+{"location":"proxy.ts:48","message":"pathnameHasLocale check","data":{"pathname":"/ko","pathnameHasLocale":true},"timestamp":1766464768938,"sessionId":"debug-session","hypothesisId":"D"}
+{"location":"proxy.ts:53","message":"returning next() - locale already present","data":{"pathname":"/ko"},"timestamp":1766464768938,"sessionId":"debug-session","hypothesisId":"D"}
+{"location":"proxy.ts:39","message":"proxy function called","data":{"pathname":"/","url":"http://localhost:3000/"},"timestamp":1766464783184,"sessionId":"debug-session","hypothesisId":"C"}
+{"location":"proxy.ts:48","message":"pathnameHasLocale check","data":{"pathname":"/","pathnameHasLocale":false},"timestamp":1766464783185,"sessionId":"debug-session","hypothesisId":"D"}
+{"location":"proxy.ts:66","message":"redirecting to locale path","data":{"pathname":"/","locale":"ko","redirectUrl":"http://localhost:3000/ko/"},"timestamp":1766464783186,"sessionId":"debug-session","hypothesisId":"B"}
+{"location":"proxy.ts:39","message":"proxy function called","data":{"pathname":"/ko","url":"http://localhost:3000/ko"},"timestamp":1766464783193,"sessionId":"debug-session","hypothesisId":"C"}
+{"location":"proxy.ts:48","message":"pathnameHasLocale check","data":{"pathname":"/ko","pathnameHasLocale":true},"timestamp":1766464783194,"sessionId":"debug-session","hypothesisId":"D"}
+{"location":"proxy.ts:53","message":"returning next() - locale already present","data":{"pathname":"/ko"},"timestamp":1766464783194,"sessionId":"debug-session","hypothesisId":"D"}
+{"location":"proxy.ts:39","message":"proxy function called","data":{"pathname":"/en/docs","url":"http://localhost:3000/en/docs"},"timestamp":1766464784721,"sessionId":"debug-session","hypothesisId":"C"}
+{"location":"proxy.ts:48","message":"pathnameHasLocale check","data":{"pathname":"/en/docs","pathnameHasLocale":true},"timestamp":1766464784722,"sessionId":"debug-session","hypothesisId":"D"}
+{"location":"proxy.ts:53","message":"returning next() - locale already present","data":{"pathname":"/en/docs"},"timestamp":1766464784722,"sessionId":"debug-session","hypothesisId":"D"}
+{"location":"proxy.ts:39","message":"proxy function called","data":{"pathname":"/en","url":"http://localhost:3000/en"},"timestamp":1766464788589,"sessionId":"debug-session","hypothesisId":"C"}
+{"location":"proxy.ts:48","message":"pathnameHasLocale check","data":{"pathname":"/en","pathnameHasLocale":true},"timestamp":1766464788589,"sessionId":"debug-session","hypothesisId":"D"}
+{"location":"proxy.ts:53","message":"returning next() - locale already present","data":{"pathname":"/en"},"timestamp":1766464788590,"sessionId":"debug-session","hypothesisId":"D"}
+{"location":"proxy.ts:39","message":"proxy function called","data":{"pathname":"/","url":"http://localhost:3000/"},"timestamp":1766464791360,"sessionId":"debug-session","hypothesisId":"C"}
+{"location":"proxy.ts:48","message":"pathnameHasLocale check","data":{"pathname":"/","pathnameHasLocale":false},"timestamp":1766464791361,"sessionId":"debug-session","hypothesisId":"D"}
+{"location":"proxy.ts:66","message":"redirecting to locale path","data":{"pathname":"/","locale":"ko","redirectUrl":"http://localhost:3000/ko/"},"timestamp":1766464791362,"sessionId":"debug-session","hypothesisId":"B"}
+{"location":"proxy.ts:39","message":"proxy function called","data":{"pathname":"/ko","url":"http://localhost:3000/ko"},"timestamp":1766464791370,"sessionId":"debug-session","hypothesisId":"C"}
+{"location":"proxy.ts:48","message":"pathnameHasLocale check","data":{"pathname":"/ko","pathnameHasLocale":true},"timestamp":1766464791370,"sessionId":"debug-session","hypothesisId":"D"}
+{"location":"proxy.ts:53","message":"returning next() - locale already present","data":{"pathname":"/ko"},"timestamp":1766464791370,"sessionId":"debug-session","hypothesisId":"D"}
+{"location":"proxy.ts:39","message":"proxy function called","data":{"pathname":"/en","url":"http://localhost:3000/en"},"timestamp":1766464792039,"sessionId":"debug-session","hypothesisId":"C"}
+{"location":"proxy.ts:48","message":"pathnameHasLocale check","data":{"pathname":"/en","pathnameHasLocale":true},"timestamp":1766464792039,"sessionId":"debug-session","hypothesisId":"D"}
+{"location":"proxy.ts:53","message":"returning next() - locale already present","data":{"pathname":"/en"},"timestamp":1766464792040,"sessionId":"debug-session","hypothesisId":"D"}
