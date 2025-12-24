@@ -8,7 +8,7 @@ msgstr ""
 "Language: ko\n"
 "Project-Id-Version: test-i18n-with-nextjs\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-12-24 05:26\n"
+"PO-Revision-Date: 2025-12-24 05:29\n"
 "Last-Translator: \n"
 "Language-Team: Korean\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -23,29 +23,29 @@ msgstr ""
 #: src/app/[lang]/docs/page.tsx:23
 #: src/app/[lang]/docs/page.tsx:31
 msgid "{0, plural, zero {No items} one {# item} other {# items}}"
-msgstr ""
+msgstr "{0, plural,zero {ㅋㅋi}one {# asdf}other {#cvcvcvcv}}"
 
 #: src/app/[lang]/docs/page.tsx:39
 msgid "{itemCount, plural, zero {No items} one {# item} other {# items}}"
-msgstr ""
+msgstr "{itemCount, plural, zero {No itemzzzzzs} one {# zzzzzzzzzitzzem} other {# zzitems}}"
 
 #: src/app/[lang]/page.tsx:32
 msgid "<0>Looking for a starting point or more instructions? Head over to <1>Templates</1> or the <2>Learning</2> center.</0>"
-msgstr ""
+msgstr "<0>asdf <1>asdf</1> or asdf <2>asdf</2> asdf.</0>"
 
 #: src/app/[lang]/page.tsx:62
 msgid "Documentation"
-msgstr ""
+msgstr "한국어테스트1"
 
 #: src/app/[lang]/docs/page.tsx:20
 msgid "This is the documentation page."
-msgstr ""
+msgstr "한국어테스트2."
 
 #: src/app/[lang]/page.tsx:30
 msgid "To get started, edit the page.tsx file."
-msgstr ""
+msgstr "한국어테스트3."
 
 #: src/app/[lang]/docs/page.tsx:47
 msgid "Variable: {variableName}"
-msgstr ""
+msgstr "한국어테스트4: {variableName}"
 
