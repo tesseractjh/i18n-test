@@ -1,0 +1,14 @@
+{
+  "HomePage": {
+    "title": "시작하려면 page.tsx 파일을 수정하세요.",
+    "description": "시작점이나 더 많은 지침을 찾고 계신가요?"
+  },
+  "DocsPage": {
+    "title": "문서 페이지입니다.",
+    "noItems": "아이템이 없습니다",
+    "oneItem": "1개의 아이템",
+    "twoItems": "2개의 아이템",
+    "variable": "변수: {value}"
+  }
+}
+

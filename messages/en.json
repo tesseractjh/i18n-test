@@ -1,0 +1,14 @@
+{
+  "HomePage": {
+    "title": "To get started, edit the page.tsx file.",
+    "description": "Looking for a starting point or more instructions?"
+  },
+  "DocsPage": {
+    "title": "Documentation Page",
+    "noItems": "No items",
+    "oneItem": "1 item",
+    "twoItems": "2 items",
+    "variable": "Variable: {value}"
+  }
+}
+
